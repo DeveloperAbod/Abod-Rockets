@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* custom class */
+@layer utilities{
+    .section-min-height{
+        min-height:calc(100vh - 68px) ;
+    }
+
+    .toggle-btn{
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45
+            [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+           /*  [&>div]:rotate-[720deg] */
+    }
+    .dir-ltr{
+        direction: ltr;
+    }
+}

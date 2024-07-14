@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="sm:scroll-smooth rtl:font-Rubik">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صواريخ عبود</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium rtl:font-semibold">
+                <a href="#hero">🚀صواريخ عبود</a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="text-3xl sm:hidden cursor-pointer relative w-8 h-8">
+                    <!--  &#9776; -->
+                    <div
+                        class="w-8 bg-white h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500 rtl:dir-ltr">
+                    </div>
+                </button>
+                <nav class="hidden sm:block space-x-8 rtl:space-x-reverse text-xl rtl:font-medium" aria-label="main">
+                    <a href="#rockets" class="hover:opacity-90"> صواريخنا</a>
+                    <a href="#testimonials" class="hover:opacity-90"> عملائنا</a>
+                    <a href="#contact" class="hover:opacity-90"> تواصل معنا</a>
+                    <a id="toggle-them" onclick="toggleDarkMode()" class="hover:opacity-90 cursor-pointer">
+                        &#9790;</a>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu"
+            class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90">الرئيسية</a>
+                <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">صواريخنا</a>
+                <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">عملائنا</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">تواصل معنا</a>
+                <a id="toggle-them2" onclick="toggleDarkMode()"
+                    class="w-full text-center py-6 hover:opacity-90 cursor-pointer">&#9790;</a>
+            </nav>
+        </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+        <section id="hero"
+            class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="sm:w-1/2">
+                <h2
+                    class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left rtl:sm:text-right text-slate-900 dark:text-white">
+                    نذهب بجرأة
+                    <span class="text-indigo-700 dark:text-indigo-300"> إلى حيث لم يذهب صاروخ</span>
+                    من قبل ...
+                </h2>
+                <p
+                    class="max-w-md text-2xl mt-4  text-center sm:text-left rtl:sm:text-right text-slate-700 dark:text-slate-400">
+                    نحن نبني اليوم صواريخ للقرن القادم. من القمر إلى المريخ والمشتري وما بعدهما...
+                </p>
+                <p
+                    class="max-w-md text-2xl mt-4 text-center rtl:font-medium sm:text-left rtl:sm:text-right text-slate-700 dark:text-slate-400">
+                    فكر في صواريخ عبود
+                </p>
+            </article>
+            <img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+        <section id="rockets"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-blod text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                صواريخنا
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class="w-1/2 mb-6" src="./img/rocketman.png" alt="Explorer" />
+
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                        المستكشف
+                    </h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
+                        $1000
+                    </p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-900 dark:text-slate-400">
+                        استكشاف بأسعار معقولة
+                    </p>
+                </li>
+
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class="w-1/2 mb-6" src="./img/rocketride.png" alt="Adventurer" />
+
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                        مغامر
+                    </h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
+                        $3000
+                    </p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-900 dark:text-slate-400">
+                        الصاروخ الأكثر مبيعا!
+                    </p>
+                </li>
+
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class="w-1/2 mb-6" src="./img/rocketlaunch.png" alt="Infinity" />
+
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                        ما لا نهاية
+                    </h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">
+                        $10000
+                    </p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-900 dark:text-slate-400">
+                        سفينة فضاء فاخرة
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+        <section id="testimonials"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-blod   text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                عملائنا
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-2xl sm:text-3xl text-left rtl:text-right mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        لقد كان عبود دائمًا موجودًا من أجلي. وصل صاروخ المستكشف الخاص بهم
+                        في صندوق خشبي كما هو متوقع. عميل دائم! تجربة تسوق ممتازة
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;عبدالرحمن الوصابي
+                </figcaption>
+            </figure>
+
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-2xl sm:text-3xl text-left rtl:text-right mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        لقد أحبط صاروخ عبود المغامر جهاز Illudium Q-36 Explosive Space Modulator الخاص بي في عدة
+                        مناسبات. وهذا يجعلني غاضبًا جدًا! ومع ذلك، فقد منحت أنا وK-9 شركة عبود عقد المريخ لصواريخ
+                        استكشاف الفضاء بناءً على جودة عبود وتصميماتها المتينة.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;عبدالله فارع
+                </figcaption>
+            </figure>
+
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        لقد أدركت أنني لم أكن أريد صاروخ عبود ما لا نهاية
+                        فحسب، بل كنت أحتاجه أيضًا لمهمتي في الفضاء. وقد
+                        تم تسليمه في يوم واحد! لا شيء يقول "خذني إلى قائدك" مثل صاروخ عبود ما لا نهاية
+                        ! 💯
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;عم عبدووو
+                </figcaption>
+            </figure>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+        <section id="contact"
+            class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-blod  text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                تواصل معنا
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">الموضوع</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60"
+                    placeholder="اكتب موضوعك"
+                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" />
+                <label for="message">الرسالة</label>
+                <textarea name="message" id="message" placeholder="اكتب رسالتك"
+                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+                <button
+                    class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+                    ارسال
+                </button>
+            </form>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2 " />
+        <section
+            class=" sm:py-16 lg:py-24 p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-blod   text-center sm:text-5xl mb-6 text-slate-900 dark:text-white pb-20">
+                مميزاتنا
+            </h2>
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-blue-100" width="72" height="75" viewBox="0 0 72 75" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
+                            </svg>
+                            <svg class="absolute text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-orange-100" width="62" height="64" viewBox="0 0 62 64" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z" />
+                            </svg>
+                            <svg class="absolute text-orange-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-green-100" width="66" height="68" viewBox="0 0 66 68" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
+                            </svg>
+                            <svg class="absolute text-green-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-purple-100" width="66" height="68" viewBox="0 0 66 68" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
+                            </svg>
+                            <svg class="absolute text-purple-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-gray-100" width="65" height="70" viewBox="0 0 65 70" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M64.5 26C64.5 46.4345 56.4345 70 36 70C15.5655 70 0 53.9345 0 33.5C0 13.0655 13.0655 0 33.5 0C53.9345 0 64.5 5.56546 64.5 26Z" />
+                            </svg>
+                            <svg class="absolute text-gray-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-yellow-100" width="78" height="78" viewBox="0 0 78 78" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.49996 28.0002C4.09993 47.9554 14.1313 66.7885 35.5 71.5002C56.8688 76.2119 68.0999 58.4553 72.5 38.5001C76.9 18.5449 68.3688 12.711 47 7.99931C25.6312 3.28759 12.9 8.04499 8.49996 28.0002Z" />
+                            </svg>
+                            <svg class="absolute text-yellow-500 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-gray-100" width="62" height="64" viewBox="0 0 62 64" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z">
+                                </path>
+                            </svg>
+                            <svg class="absolute text-gray-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-rose-100" width="72" height="75" viewBox="0 0 72 75" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
+                            </svg>
+                            <svg class="absolute text-rose-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+
+                    <div>
+                        <div class="relative flex items-center justify-center mx-auto">
+                            <svg class="text-lime-100" width="62" height="65" viewBox="0 0 62 65" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 13.0264C0 33.4609 8.06546 64.0264 28.5 64.0264C48.9345 64.0264 62 50.4604 62 30.0259C62 9.59135 59.4345 4.0256 39 4.0256C18.5655 4.0256 0 -7.40819 0 13.0264Z" />
+                            </svg>
+
+                            <svg class="absolute text-lime-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black  dark:text-white">طرق دفع امنه</h3>
+                        <p class="mt-4 text-base rtl:font-semibold text-gray-600">هناك العديد من الطرق الآمنة للدفع ، مثل استخدام بطاقات الائتمان وخدمات الدفع الإلكتروني..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-4xl mx-auto flex p-4 flex-col sm:flex-row sm:justify-between rtl:font-medium">
+            <address > 
+                <h2>شركة عبود لصناعة الصواريخ</h2>
+                صنعاء - اليمن<br />
+                
+                البريد الإلكتروني:
+                <a href="mailto:abodi.alwosabi12@gmail.com">
+                    abodi.alwosabi12@gmail.com </a><br />
+                رقم الهاتف: <a href="tel:+967774370569">(+967) 774370569</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#rockets" class="hover:opacity-90">صواريخنا</a>
+                <a href="#testimonials" class="hover:opacity-90">عملائنا</a>
+                <a href="#contact" class="hover:opacity-90">تواصل معنا</a>
+            </nav>
+            <div class="flex-flex-col sm:gap-2">
+                <p class="text-right">حقوق النشر &copy; <span id="year">2024</span></p>
+                <p class="text-right">جميع الحقوق محفوظة للمطور <a class="text-blue-300" target="_blank" href="https://devabod.online">عبود</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+<script></script>
+<script src="./js/main.js" defer></script>
+
+</html>
